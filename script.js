@@ -68,7 +68,6 @@ var json = [
 }
 ];
 
-
 var nome = (json[0].name);
 var dtNasc = (json[0].dtNasc);
 var endereco = (json[0].endereco);
@@ -77,7 +76,6 @@ var cidade = (json[0].cidade);
 var email = (json[0].email);
 var idade = (json[0].idade);
 var anoLetivo = (json[0].anoLetivo);
-
 
 document.getElementById('aluno_nome').innerHTML = nome;
 document.getElementById('aluno_nasc').innerHTML = dtNasc;
