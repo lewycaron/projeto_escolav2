@@ -28,12 +28,16 @@
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
+
+
   <!-- Template Main JSON File -->
+
+
 
 
 </head>
 
-<body>
+<body id="tudo">
 
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -41,31 +45,37 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
-
       <div class="profile">
         <img src="../assets/img/alunos/profile-img2.jpg" alt="" id="prof_img" class="img-fluid rounded-circle">
-        <h1 class="text-light text-center"><a href="prof.html">Professor</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <div id="pf_nome">
+          <div>
+            <h1 class="text-light text-center"><a href="prof.html"><span class="nm_aluno"> Professor </span></a></h1>
+          </div>
         </div>
       </div>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Professor</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Agenda</span></a></li>
-          <li><a href="#notas" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Notas/Faltas</span></a>
-          </li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Cont.
-                Disciplinas</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Atv.
-                Extra</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contato</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
+
+      <div class="social-links mt-3 text-center">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+
+    <nav id="navbar" class="nav-menu navbar">
+      <ul>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Professor</span></a></li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Agenda</span></a></li>
+        <li><a href="#notas" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Notas/Faltas</span></a>
+        </li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Cont.
+              Disciplinas</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Atv.
+              Extra</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contato</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
 
@@ -85,7 +95,6 @@
     </section><!-- End Breadcrumbs -->
 
 
-
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
@@ -98,7 +107,7 @@
             <img src="../assets/img/alunos/profile-img2.jpg" class="img-fluid" alt="Foto de matricula do Aluno">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3 id="aluno_nome"></h3>
+            <h3> <span id="aluno_nome"> nome aqui</span></h3>
             <p class="fst-italic">
             </p>
             <div class="row">
@@ -122,26 +131,26 @@
           </div>
         </div>
       </div>
-    </section><!-- End About Section -->
+    </section>
+    <!-- End About Section -->
 
+
+    <!-- ======= Formulário Section ======= -->
     <section>
-      <!-- ======= Formulário Section ======= -->
       <div class="container">
-        
+
         <div class="section-title ">
           <h2 id="notas">Cadastrar Notas e Faltas</h2>
           <p></p>
         </div>
-        
         <div class="form-row">
           <div class="col-md-4 mb-3">
             <label for="input_nome_aluno">Nome do aluno</label>
             <input type="text" class="form-control" id="input_nome_aluno">
           </div>
-          
           <div class="col-md-4 mb-3">
-              <label for="input_aluno_materia">Materia</label>
-              <input type="text" class="form-control" id="input_aluno_materia">
+            <label for="input_aluno_materia">Materia</label>
+            <input type="text" class="form-control" id="input_aluno_materia">
           </div>
         </div>
         <div class="form-row">
@@ -149,52 +158,150 @@
             <label for="input_aluno_nota">Nota</label>
             <input type="text" class="form-control" id="input_aluno_nota">
           </div>
-
-          <div class="col-md-4 mb-3"> 
+          <div class="col-md-4 mb-3">
             <label for="input_aluno_falta">Faltas</label>
             <input type="text" class="form-control" id="input_aluno_falta">
           </div>
-            <p></p>
-            <button class="btn btn-primary" onclick="aluno.salvar()">Salvar</button>
+          <p></p>
+          <button class="btn btn-primary" onclick="aluno.salvar()">Salvar</button>
 
-            <button class="btn btn-primary" onclick="aluno.cancelar()">Cancelar</button>
+          <button class="btn btn-primary" onclick="aluno.cancelar()">Cancelar</button>
         </div>
-                 
-        
-       </div>
-    </section><!-- End formulario Section -->
+
+      </div>
+    </section>
+    <!-- End formulario Section -->
 
 
+    <!-- ======= NOTAS E FALTAS -  Section ======= -->
+    <section class="container">
+      <div class="section-title ">
+        <h2></h2>
+      </div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"
+            onclick="matematica()">Matemática</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"
+            onclick="quimica()">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+            type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"
+            onclick="fisica()">Física</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
+            type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false"
+            onclick="portugues()">Portugues</button>
+        </li>
+      </ul>
 
-    <!-- ======= NOTAS Section ======= -->
-    <section>
-    <div class="container">
-    
-      <table class="table table-dark">
-        <thead>
-          <tr>
-            <th scope="col">Nome Aluno</th>
-            <th scope="col">Materia</th>
-            <th scope="col">Faltas</th>
-            <th scope="col">Nota</th>
-          </tr>
-        </thead>
-        <tbody id="tbody">
-          	
-          
-        </tbody>
-      </table>
-    </div>
-    </section><!-- End Notas Section -->
+      <!-- ======= NOTAS matematica - Section ======= -->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+          tabindex="0">
 
+          <section>
+            <div class="container">
+              <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Materia</th>
+                    <th scope="col">Nome Aluno</th>
+                    <th scope="col">Faltas</th>
+                    <th scope="col">Nota</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody_mat">
+                  <!--infos dinamicas do JS-->
+                </tbody>
+              </table>
+            </div>
+          </section>
 
+        </div><!-- End Notas Section -->
 
+        <!-- ======= NOTAS quimica - Section ======= -->
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
 
+          <section>
+            <div class="container">
+              <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Materia</th>
+                    <th scope="col">Nome Aluno</th>
+                    <th scope="col">Faltas</th>
+                    <th scope="col">Nota</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody_quimica">
+                  <!--infos dinamicas do JS-->
+                </tbody>
+              </table>
+            </div>
+          </section>
 
+        </div><!-- End Notas quimica Section -->
 
+        <!-- ======= NOTAS fisica - Section ======= -->
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
 
+          <section>
+            <div class="container">
+              <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Materia</th>
+                    <th scope="col">Nome Aluno</th>
+                    <th scope="col">Faltas</th>
+                    <th scope="col">Nota</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody_fisica">
+
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+        </div><!-- End Notas fisica Section -->
+
+        <!-- ======= NOTAS portugues - Section ======= -->
+        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+
+          <section>
+            <div class="container">
+              <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Materia</th>
+                    <th scope="col">Nome Aluno</th>
+                    <th scope="col">Faltas</th>
+                    <th scope="col">Nota</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody_portugues">
+                  <!--infos dinamicas do JS-->
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+        </div><!-- End Notas portugues Section -->
+      </div>
+    </section>
+
+    <!-- End NOTAS E FALTAS - Section -->
 
   </main><!-- End #main -->
+
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -207,6 +314,7 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/purecounter/purecounter.js"></script>
@@ -223,7 +331,7 @@
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/script.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 </body>
 
