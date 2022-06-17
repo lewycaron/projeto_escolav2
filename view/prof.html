@@ -44,7 +44,7 @@
 
       <div class="profile">
         <img src="../assets/img/alunos/profile-img2.jpg" alt="" id="prof_img" class="img-fluid rounded-circle">
-        <h1 class="text-light text-center"><a href="index.html">Professor</a></h1>
+        <h1 class="text-light text-center"><a href="prof.html">Professor</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -57,7 +57,7 @@
         <ul>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Professor</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Agenda</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Notas/Faltas</span></a>
+          <li><a href="#notas" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Notas/Faltas</span></a>
           </li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Cont.
                 Disciplinas</span></a></li>
@@ -127,37 +127,39 @@
     <section>
       <!-- ======= Formulário Section ======= -->
       <div class="container">
-
-        <div class="section-title">
-          <h2>Cadastrar Notas e Faltas</h2>
+        
+        <div class="section-title ">
+          <h2 id="notas">Cadastrar Notas e Faltas</h2>
           <p></p>
         </div>
-        <form>
-          <div>
+        
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
             <label for="input_nome_aluno">Nome do aluno</label>
             <input type="text" class="form-control" id="input_nome_aluno">
-            
           </div>
           
-          <div>
+          <div class="col-md-4 mb-3">
               <label for="input_aluno_materia">Materia</label>
               <input type="text" class="form-control" id="input_aluno_materia">
           </div>
-
-          <div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
             <label for="input_aluno_nota">Nota</label>
             <input type="text" class="form-control" id="input_aluno_nota">
           </div>
 
-          <div>
+          <div class="col-md-4 mb-3"> 
             <label for="input_aluno_falta">Faltas</label>
             <input type="text" class="form-control" id="input_aluno_falta">
           </div>
-                     
+            <p></p>
             <button class="btn btn-primary" onclick="aluno.salvar()">Salvar</button>
 
             <button class="btn btn-primary" onclick="aluno.cancelar()">Cancelar</button>
-        </form>          
+        </div>
+                 
         
        </div>
     </section><!-- End formulario Section -->
@@ -165,8 +167,9 @@
 
 
     <!-- ======= NOTAS Section ======= -->
+    <section>
     <div class="container">
-
+    
       <table class="table table-dark">
         <thead>
           <tr>
@@ -177,11 +180,12 @@
           </tr>
         </thead>
         <tbody id="tbody">
+          	
           
         </tbody>
       </table>
     </div>
-    </section><!-- End About Section -->
+    </section><!-- End Notas Section -->
 
 
 
