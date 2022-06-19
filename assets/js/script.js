@@ -8,10 +8,10 @@ var json = [
         "endereco": "R. Prof. Pedro Viriato Parigot de Souza, S/N",
         "telefone": "41 9999-9999",
         "cidade": "Curitiba",
-        "idade": "14 anos",
+        
         "anoLetivo": "2 Ano",
         "email": "mcc@gmail.com",
-        "atvExtra": ["Xadrez", "Volei"],
+        "atvExtra": ["Xadrez", "Judo", "Volei", "Futsal"],
         "materias": [
             {
                 "idMat": 1,
@@ -50,10 +50,10 @@ var json = [
         "endereco": "R. Prof. Pedro Viriato Parigot de Souza, S/N",
         "telefone": "41 9999-9999",
         "cidade": "Cianorte",
-        "idade": "22 anos",
+        
         "anoLetivo": "3 Ano",
         "email": "wakeuplitlepedro@gmail.com",
-        "atvExtra": ["Xadrez", "Futsal"],
+        "atvExtra": ["Xadrez", "Judo", "Volei", "Futsal"],
         "materias": [
             {
                 "idMat": 1,
@@ -91,10 +91,10 @@ var json = [
         "endereco": "R. Prof. Pedro Viriato Parigot de Souza, S/N",
         "telefone": "41 9999-9999",
         "cidade": "Araucaria",
-        "idade": "22 anos",
+        
         "anoLetivo": "3 Ano",
         "email": "wakeuplitlepedro@gmail.com",
-        "atvExtra": ["Xadrez", "Futsal"],
+        "atvExtra": ["Xadrez", "Judo", "Volei", "Futsal"],
         "materias": [
             {
                 "idMat": 1,
@@ -132,10 +132,10 @@ var json = [
         "endereco": "R. Prof. Pedro Viriato Parigot de Souza, S/N",
         "telefone": "41 9999-9999",
         "cidade": "Araucaria",
-        "idade": "22 anos",
+        
         "anoLetivo": "3 Ano",
         "email": "wakeuplitlepedro@gmail.com",
-        "atvExtra": ["Xadrez", "Futsal"],
+        "atvExtra": ["Xadrez", "Judo", "Volei", "Futsal"],
         "materias": [
             {
                 "idMat": 1,
@@ -176,7 +176,7 @@ var json = [
         "idade": "22 anos",
         "anoLetivo": "3 Ano",
         "email": "wakeuplitlepedro@gmail.com",
-        "atvExtra": ["Xadrez", "Futsal"],
+        "atvExtra": ["Xadrez", "Judo", "Volei", "Futsal"],
         "materias": [
             {
                 "idMat": 1,
@@ -214,10 +214,9 @@ var json = [
         "endereco": "R. Prof. Pedro Viriato Parigot de Souza, S/N",
         "telefone": "41 9999-9999",
         "cidade": "Araucaria",
-        "idade": "22 anos",
         "anoLetivo": "3 Ano",
         "email": "wakeuplitlepedro@gmail.com",
-        "atvExtra": ["Xadrez", "Futsal"],
+        "atvExtra": ["Xadrez", "Judo", "Volei", "Futsal"],
         "materias": [
             {
                 "idMat": 1,
@@ -307,7 +306,6 @@ function matematica(){
 }
 
 
-
 function quimica(){
     let tbody = document.getElementById('tbody_quimica');
     for (let i = 0; i < json.length; i++) {
@@ -364,96 +362,38 @@ function portugues(){
 }
 
 
+function atv_Extra(){
+    let tbody = document.getElementById('tbody_atvExtra');
+    
+    for (let i = 0; i < json.length; i++) {
 
-// //Cadastro de notas e faltas
+        let nome_atv = json.atvExtra
+        let tr = tbody.insertRow();
+        let td_nomeAluno = tr.insertCell();
+        let td_atvExtra = tr.insertCell();
+        
+        td_nomeAluno.innerText = json[i].name; 
+        td_atvExtra.setAttribute("id", "id_check");
 
-// class Aluno {
+        td_atvExtra.innerHTML = atv_Extra_check() // AJUSTAR REPETICAO DOS INTENS
+        
 
+        function atv_Extra_check(){
+            
+            for (let j = 0; j < json[j].atvExtra.length; j++) {
+                                
+                let dados = '<div class="form-check form-check-inline "><input class="form-check-input" type="checkbox" id="inlineCheckbox1" value=""><label class="form-check-label" for="inlineCheckbox1">' + json[j].atvExtra[j] + '</label></div>'
+                
+                return(dados)
+            }
+        }   
+    }
+    
+ 
 
-
-
-//     constructor() {
-//         this.id = 1;
-//         this.arrayAlunos = {};
-//     }
-
-
-//     salvar() {
-
-//         let dadosalunos = this.lerdados();
-
-
-//         if (this.validacampo(alunos)) {
-//             this.adicionar(alunos)
-
-//         }
-
-//         console.log(this.arrayAlunos)
-//         this.listaTabela()
-//     }
-
-//     lerdados() {
-
-//         let alunos = {};
-//         alunos.id = this.id;
-//         alunos.nomeAluno = document.getElementById('input_nome_aluno').value;
-//         alunos.nomeDisciplina = document.getElementById('input_aluno_materia').value;
-//         alunos.notaDisciplina = document.getElementById('input_aluno_nota').value;
-//         alunos.faltasMateria = document.getElementById('input_aluno_falta').value;
-
-//         return alunos;
-//     }
-
-//     // listaTabela(){
-
-//     //     let tbody = document.getElementById('tbody');
-
-//     //     for (let i = 0; i < this.arrayAlunos.length; i++) {
-
-//     //         let tr = tbody.insertRow();
-//     //         let td_nomeAluno = tr.insertCell();
-//     //         let td_nomeDisciplina = tr.insertCell();
-//     //         let td_notaDisciplina = tr.insertCell();
-//     //         let td_faltasDisciplina = tr.insertCell();
-
-//     //     }
-
-//     // }
-
-//     adicionar(alunos) {
-//         this.arrayAlunos.push(alunos);
-//         this.id++
-//     }
+}
 
 
-//     validacampo(alunos) {
-
-//         let msg = '';
-
-//         if (aluno.nomeAluno == '') {
-//             msg += 'Informe o Nome do aluno \n';
-//         }
-//         if (aluno.nomeDisciplina == '') {
-//             msg += 'Informe qual a Disciplina \n';
-//         }
-//         if (aluno.notaDisciplina == '') {
-//             msg += 'Informe qual a Nota \n';
-//         }
-//         if (aluno.faltasMateria == '') {
-//             msg += 'Informe a quantidade de faltas \n';
-//         }
-
-//         if (msg != '') {
-//             alert(msg);
-//             return false
-//         }
-//         return true;
-//     }
 
 
-//     cancelar() {
-//         alert('teset')
-//     }
-// }
 
-// var aluno = new Aluno();
