@@ -49,18 +49,11 @@
         <img src="../assets/img/alunos/profile-img2.jpg" alt="" id="prof_img" class="img-fluid rounded-circle">
         <div id="pf_nome">
           <div>
-            <h1 class="text-light text-center"><a href="prof.html"><span class="nm_aluno"> Professor </span></a></h1>
+            <h1 class="text-light text-center"><a href="prof.html"><span class="nm_aluno">Professor </span></a></h1>
           </div>
         </div>
       </div>
 
-
-      <div class="social-links mt-3 text-center">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
     </div>
 
     <nav id="navbar" class="nav-menu navbar">
@@ -143,17 +136,17 @@
           <h2 id="notas">Cadastrar Notas e Faltas</h2>
           <p></p>
         </div>
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
+        <div class="row">
+          <div class="col mb-3">
             <label for="input_nome_aluno">Nome do aluno</label>
             <input type="text" class="form-control" id="input_nome_aluno">
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col mb-3">
             <label for="input_aluno_materia">Materia</label>
             <input type="text" class="form-control" id="input_aluno_materia">
           </div>
         </div>
-        <div class="form-row">
+        <div class="row">
           <div class="col-md-4 mb-3">
             <label for="input_aluno_nota">Nota</label>
             <input type="text" class="form-control" id="input_aluno_nota">
@@ -163,10 +156,10 @@
             <input type="text" class="form-control" id="input_aluno_falta">
           </div>
           <p></p>
-          <button class="btn btn-primary" onclick="aluno.salvar()">Salvar</button>
 
-          <button class="btn btn-primary" onclick="aluno.cancelar()">Cancelar</button>
         </div>
+        <button class="btn btn-primary" onclick="aluno.salvar()">Salvar</button>
+        <button class="btn btn-primary" onclick="aluno.cancelar()">Cancelar</button>
 
       </div>
     </section>
@@ -176,7 +169,8 @@
     <!-- ======= NOTAS E FALTAS -  Section ======= -->
     <section class="container">
       <div class="section-title ">
-        <h2></h2>
+        <h2 id="notas">Consulta por disciplina</h2>
+        <p></p>
       </div>
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
@@ -187,7 +181,7 @@
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
             type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"
-            onclick="quimica()">Profile</button>
+            onclick="quimica()">Quimica</button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
@@ -195,8 +189,8 @@
             onclick="fisica()">Física</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
-            type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false"
+          <button class="nav-link" id="portugues-tab" data-bs-toggle="tab" data-bs-target="#portugues-tab-pane"
+            type="button" role="tab" aria-controls="portugues-tab-pane" aria-selected="false"
             onclick="portugues()">Portugues</button>
         </li>
       </ul>
@@ -224,7 +218,7 @@
             </div>
           </section>
 
-        </div><!-- End Notas Section -->
+        </div><!-- End Notas matematica Section -->
 
         <!-- ======= NOTAS quimica - Section ======= -->
         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
@@ -272,8 +266,8 @@
 
         </div><!-- End Notas fisica Section -->
 
-        <!-- ======= NOTAS portugues - Section ======= -->
-        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+        <!-- ======= NOTAS Portugues - Section ======= -->
+        <div class="tab-pane fade" id="portugues-tab-pane" role="tabpanel" aria-labelledby="portugues-tab" tabindex="0">
 
           <section>
             <div class="container">
@@ -287,17 +281,92 @@
                   </tr>
                 </thead>
                 <tbody id="tbody_portugues">
-                  <!--infos dinamicas do JS-->
                 </tbody>
               </table>
             </div>
           </section>
+        </div>
+      </div><!-- End Notas Portugues Section -->
+    </section><!-- FIM NOTAS e FALTAS - Section -->
 
-        </div><!-- End Notas portugues Section -->
+  
+    <!-- ======= Conteudo Disciplinas -  Section ======= -->
+
+    <section class="container">
+      <div class="section-title ">
+        <h2 id="notas">Material Didático</h2>
+        <p></p>
       </div>
-    </section>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="contmat-tab" data-bs-toggle="tab" data-bs-target="#contmat-tab-pane"
+            type="button" role="tab" aria-controls="contmat-tab-pane" aria-selected="true"
+            >Matemática</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contquim-tab" data-bs-toggle="tab" data-bs-target="#contquim-tab-pane"
+            type="button" role="tab" aria-controls="contquim-tab-pane" aria-selected="false"
+            >Quimica</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contfisica-tab" data-bs-toggle="tab" data-bs-target="#contfisica-tab-pane"
+            type="button" role="tab" aria-controls="contfisica-tab-pane" aria-selected="false"
+            >Física</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contportugues-tab" data-bs-toggle="tab" data-bs-target="#contportugues-tab-pane"
+            type="button" role="tab" aria-controls="contportugues-tab-pane" aria-selected="false"
+          >Portugues</button>
+        </li>
+      </ul>
 
-    <!-- End NOTAS E FALTAS - Section -->
+      <!-- ======= conteudo matematica - Section ======= -->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="contmat-tab-pane" role="tabpanel" aria-labelledby="contmat-tab"
+          tabindex="0">
+
+          <section>
+            <div class="container">
+
+            </div>
+          </section>
+
+        </div><!-- End conteudo matematica Section -->
+
+        <!-- ======= conteudo quimica - Section ======= -->
+        <div class="tab-pane fade" id="contquim-tab-pane" role="tabpanel" aria-labelledby="contquim-tab" tabindex="0">
+
+          <section>
+            <div class="container">
+
+            </div>
+          </section>
+
+        </div><!-- End conteudo quimica Section -->
+
+        <!-- ======= Conteudo fisica - Section ======= -->
+        <div class="tab-pane fade" id="contfisica-tab-pane" role="tabpanel" aria-labelledby="contfisica-tab" tabindex="0">
+
+          <section>
+            <div class="container">
+         
+            </div>
+          </section>
+
+        </div><!-- End Conteudo fisica Section -->
+
+        <!-- ======= NOTAS Portugues - Section ======= -->
+        <div class="tab-pane fade" id="contportugues-tab-pane" role="tabpanel" aria-labelledby="contportugues-tab" tabindex="0">
+
+          <section>
+            <div class="container">
+              
+            </div>
+          </section>
+        </div>
+      </div><!-- End Notas Portugues Section -->
+    </section><!-- FIM conteudo Disciplinas - Section -->
+0
 
   </main><!-- End #main -->
 
