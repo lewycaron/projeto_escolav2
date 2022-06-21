@@ -262,7 +262,6 @@ var idade = (json[0].idade);
 var anoLetivo = (json[0].anoLetivo);
 
 
-
 // Perfil do Aluno
 document.getElementById('aluno_nome').innerHTML = nome;
 document.getElementById('aluno_nasc').innerHTML = dtNasc;
@@ -274,18 +273,14 @@ document.getElementById('aluno_anoLetivo').innerHTML = anoLetivo;
 document.getElementById('aluno_email').innerHTML = email;
 
 
-
 // Nome no menu Aluno
 document.getElementById("nome_aluno_titulo").innerHTML = nome
 document.getElementById("nome_aluno_menu").innerHTML = nome
 
 
 
-
 // NOTAS E FALTAS 
-
 let tbodynotas = document.getElementById('tbodynotas');
-
 for (let i = 0; i < json[0].materias.length; i++) {
 
     let tr_notas = tbodynotas.insertRow();
