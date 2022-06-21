@@ -1,4 +1,5 @@
-// DADOS JSON
+
+// DADOS NO PERFIL Aluno
     
 var json = [
     {
@@ -251,117 +252,60 @@ var json = [
 
 
 
-var nome = (json[1].name);
-var dtNasc = json[1].dtNasc;
-var endereco = (json[1].endereco);
-var telefone = (json[1].telefone);
-var cidade = (json[1].cidade);
-var email = (json[1].email);
-var idade = (json[1].idade);
-var anoLetivo = (json[1].anoLetivo);
+var nome = (json[0].name);
+var dtNasc = (json[0].dtNasc);
+var endereco = (json[0].endereco);
+var telefone = (json[0].telefone);
+var cidade = (json[0].cidade);
+var email = (json[0].email);
+var idade = (json[0].idade);
+var anoLetivo = (json[0].anoLetivo);
 
 
-// TABELAS DE NOTAS E FALTAS
 
-function matematica(){
+// Perfil do Aluno
+document.getElementById('aluno_nome').innerHTML = nome;
+document.getElementById('aluno_nasc').innerHTML = dtNasc;
+document.getElementById('aluno_end').innerHTML = endereco;
+document.getElementById('aluno_tel').innerHTML = telefone;
+document.getElementById('aluno_city').innerHTML = cidade;
+document.getElementById('aluno_idade').innerHTML = idade;
+document.getElementById('aluno_anoLetivo').innerHTML = anoLetivo;
+document.getElementById('aluno_email').innerHTML = email;
+
+
+
+// Nome no menu Aluno
+document.getElementById("nome_aluno_titulo").innerHTML = nome
+document.getElementById("nome_aluno_menu").innerHTML = nome
+
+
+
+
+// NOTAS E FALTAS 
+
+let tbodynotas = document.getElementById('tbodynotas');
+
+for (let i = 0; i < json[0].materias.length; i++) {
+
+    let tr_notas = tbodynotas.insertRow();
+    let td_nomeAluno = tr_notas.insertCell();
+    let td_nomeDisciplina = tr_notas.insertCell();
+    let td_notaDisciplina = tr_notas.insertCell();
+    let td_faltasDisciplina = tr_notas.insertCell();
     
-    let tbody = document.getElementById('tbody_mat');
-    for (let i = 0; i < json.length; i++) {
-    
-        let tr = tbody.insertRow();
-        let td_nomeDisciplina = tr.insertCell();
-        let td_nomeAluno = tr.insertCell();
-        let td_notaDisciplina = tr.insertCell();
-        let td_faltasDisciplina = tr.insertCell();
-                
-        td_nomeAluno.innerText = json[i].name; 
-        td_nomeDisciplina.innerText = json[i].materias[0].nomeMat; 
-        td_notaDisciplina.innerText = json[i].materias[0].notaMat;
-        td_faltasDisciplina.innerText = json[i].materias[0].faltasMat;
-    }        
+    td_nomeAluno.innerText = json[0].name; 
+    td_notaDisciplina.innerText = json[0].materias[i].notaMat
+    td_nomeDisciplina.innerText = json[0].materias[i].nomeMat
+    td_faltasDisciplina.innerText = json[0].materias[i].faltasMat
 }
 
 
-function quimica(){
-    let tbody = document.getElementById('tbody_quimica');
-    for (let i = 0; i < json.length; i++) {
-    
-        let tr = tbody.insertRow();
-        let td_nomeDisciplina = tr.insertCell();
-        let td_nomeAluno = tr.insertCell();
-        let td_notaDisciplina = tr.insertCell();
-        let td_faltasDisciplina = tr.insertCell();
-                
-        td_nomeAluno.innerText = json[i].name; 
-        td_nomeDisciplina.innerText = json[i].materias[1].nomeMat; 
-        td_notaDisciplina.innerText = json[i].materias[1].notaMat;
-        td_faltasDisciplina.innerText = json[i].materias[1].faltasMat;
-    }    
-    
-}
-
-
-function fisica(){
-    let tbody = document.getElementById('tbody_fisica');
-    for (let i = 0; i < json.length; i++) {
-    
-        let tr = tbody.insertRow();
-        let td_nomeDisciplina = tr.insertCell();
-        let td_nomeAluno = tr.insertCell();
-        let td_notaDisciplina = tr.insertCell();
-        let td_faltasDisciplina = tr.insertCell();
-        
-        td_nomeAluno.innerText = json[i].name; 
-        td_nomeDisciplina.innerText = json[i].materias[2].nomeMat; 
-        td_notaDisciplina.innerText = json[i].materias[2].notaMat;
-        td_faltasDisciplina.innerText = json[i].materias[2].faltasMat;
-    }    
-    
-}
-
-function portugues(){
-    let tbody = document.getElementById('tbody_portugues');
-    for (let i = 0; i < json.length; i++) {
-    
-        let tr = tbody.insertRow();
-        let td_nomeDisciplina = tr.insertCell();
-        let td_nomeAluno = tr.insertCell();
-        let td_notaDisciplina = tr.insertCell();
-        let td_faltasDisciplina = tr.insertCell();
-        
-        td_nomeAluno.innerText = json[i].name; 
-        td_nomeDisciplina.innerText = json[i].materias[3].nomeMat; 
-        td_notaDisciplina.innerText = json[i].materias[3].notaMat;
-        td_faltasDisciplina.innerText = json[i].materias[3].faltasMat;
-    }    
-    
-}
-
-
-// TABELA DE ATIVIDADES EXTRA 
-
-function atv_Extra(){
-    let tbody = document.getElementById('tbody_atvExtra');
-    
-    for (let i = 0; i < json.length; i++) {
-
-        let nome_atv = json.atvExtra
-        let tr = tbody.insertRow();
-        let td_nomeAluno = tr.insertCell();
-        let td_atvExtra = tr.insertCell();
-        
-        td_nomeAluno.innerText = json[i].name; 
-        td_atvExtra.innerText = json[i].atvExtra
-    }
-    
-}
-
-//VALIDADOR DE FORMULÁRIO
+//validar formulário
 
 window.addEventListener('load', function() {
-    
+
     var forms = document.getElementsByClassName('needs-validation');
-    
     var validation = Array.prototype.filter.call(forms, function(form) {
     form.addEventListener('submit', function(event) {
         if (form.checkValidity() === false) {
@@ -371,8 +315,17 @@ window.addEventListener('load', function() {
         form.classList.add('was-validated');
     }, false);
     });
+
 }, false);
 
 
 
+// TABELA DE ATIVIDADES EXTRA
+
+let tbody_extra = document.getElementById('tbody_atvExtra_aluno'); 
+let tr_extra = tbody_extra.insertRow();
+let td_nomeAluno_extra = tr_extra.insertCell();
+let td_atvExtra_extra = tr_extra.insertCell();
+td_nomeAluno_extra.innerText = json[0].name
+td_atvExtra_extra.innerText = json[0].atvExtra
 
