@@ -1,0 +1,41 @@
+
+---------------
+Secretaria Consulta 
+---------------
+
+Aluno
+Disciplina
+Nota-Faltas
+Ativ. Extra
+
+
+
+---------------
+Alunos
+---------------
+Agenda
+Matricula Atv. Extra
+Material Disciplinas
+Disciplina/Notas/ Faltas
+Chat
+
+
+---------------
+Responsáveis
+---------------
+
+Matricula Ano Letivo
+Matricula Atv. Extra
+Material da Disciplina
+Disciplina / Notas / Faltas
+Chat
+Agenda
+Valor Mensal******
+
+
+---------------
+Professores
+---------------
+Agenda
+Material da Disciplina
+Disciplina/Notas/ Faltas
