@@ -1,0 +1,287 @@
+[
+    {
+        "id": 0,
+        "categoria":"aluno",
+        "name": "Exemplo ",
+        "dtNasc": "17/08/1984",
+        "endereco": "R. Prof. Pedro Viriato Parigot de Souza, S/N",
+        "telefone": "41 9999-9999",
+        "cidade": "Curitiba",
+        "anoLetivo": "3 Ano",
+        "email": "teste@gmail.com",
+        "atvExtra": ["Xadrez", "Judo","Volei", "Futsal"],
+        "materias": [
+            {
+                "idMat": 1,
+                "nomeMat": "matematica",
+                "notaMat": 10,
+                "faltasMat": 1
+            },
+            {
+                "idMat": 2,
+                "nomeMat": "Quimica",
+                "notaMat": 9,
+                "faltasMat": 3
+            },
+
+            {
+                "idMat": 3,
+                "nomeMat": "Fisica",
+                "notaMat": 10,
+                "faltasMat": 2
+            }, 
+            
+            {
+                "idMat": 4,
+                "nomeMat": "Portugues",
+                "notaMat": 7,
+                "faltasMat": 0
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "categoria":"aluno",
+        "name": "Maria Carolina Cardozo",
+        "dtNasc": "17 agosto 2008",
+        "endereco": "R. Prof. Pedro Viriato Parigot de Souza, S/N",
+        "telefone": "41 9999-9999",
+        "cidade": "Curitiba",
+        "anoLetivo": "2 Ano",
+        "email": "mcc@gmail.com",
+        "atvExtra": ["Xadrez", "Volei", "Futsal"],
+        "materias": [
+            {
+                "idMat": 1,
+                "nomeMat": "matematica",
+                "notaMat": 10,
+                "faltasMat": 5
+            },
+            {
+                "idMat": 2,
+                "nomeMat": "Quimica",
+                "notaMat": 9,
+                "faltasMat": 2
+            },
+
+            {
+                "idMat": 2,
+                "nomeMat": "Fisica",
+                "notaMat": 8,
+                "faltasMat": 5
+            }, 
+            
+            {
+                "idMat": 3,
+                "nomeMat": "Portugues",
+                "notaMat": 4,
+                "faltasMat": 10
+            }
+        ]
+    },
+
+    {
+        "id": 2,
+        "categoria":"professor",
+        "name": "Pedrinho",
+        "dtNasc": "15 Junho 2000",
+        "endereco": "R. Prof. Pedro Viriato Parigot de Souza, S/N",
+        "telefone": "41 9999-9999",
+        "cidade": "Cianorte",
+        
+        "anoLetivo": "3 Ano",
+        "email": "wakeuplitlepedro@gmail.com",
+        "atvExtra": ["Xadrez", "Futsal"],
+        "materias": [
+            {
+                "idMat": 1,
+                "nomeMat": "Matematica",
+                "notaMat": 6,
+                "faltasMat": 6
+            },
+            {
+                "idMat": 2,
+                "nomeMat": "Quimica",
+                "notaMat": 7,
+                "faltasMat": 5
+            },
+
+            {
+                "idMat": 3,
+                "nomeMat": "Fisica",
+                "notaMat": 8,
+                "faltasMat": 3
+            }, 
+            
+            {
+                "idMat": 4,
+                "nomeMat": "Portugues",
+                "notaMat": 5,
+                "faltasMat": 5
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Evelin Valente",
+        "categoria":"aluno",
+        "dtNasc": "15 Junho 2000",
+        "endereco": "R. Prof. Pedro Viriato Parigot de Souza, S/N",
+        "telefone": "41 9999-9999",
+        "cidade": "Araucaria",
+        
+        "anoLetivo": "3 Ano",
+        "email": "wakeuplitlepedro@gmail.com",
+        "atvExtra": ["Xadrez", "Judo", "Futsal"],
+        "materias": [
+            {
+                "idMat": 1,
+                "nomeMat": "Matematica",
+                "notaMat": 6,
+                "faltasMat": 6
+            },
+            {
+                "idMat": 2,
+                "nomeMat": "Quimica",
+                "notaMat": 7,
+                "faltasMat": 5
+            },
+
+            {
+                "idMat": 3,
+                "nomeMat": "Fisica",
+                "notaMat": 8,
+                "faltasMat": 3
+            }, 
+            
+            {
+                "idMat": 4,
+                "nomeMat": "Portugues",
+                "notaMat": 10,
+                "faltasMat": 1
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Kauan",
+        "categoria":"aluno",
+        "dtNasc": "15 Junho 2000",
+        "endereco": "R. Prof. Pedro Viriato Parigot de Souza, S/N",
+        "telefone": "41 9999-9999",
+        "cidade": "Araucaria",
+        
+        "anoLetivo": "3 Ano",
+        "email": "wakeuplitlepedro@gmail.com",
+        "atvExtra": ["Volei", "Futsal"],
+        "materias": [
+            {
+                "idMat": 1,
+                "nomeMat": "Matematica",
+                "notaMat": 6,
+                "faltasMat": 6
+            },
+            {
+                "idMat": 2,
+                "nomeMat": "Quimica",
+                "notaMat": 7,
+                "faltasMat": 5
+            },
+
+            {
+                "idMat": 3,
+                "nomeMat": "Fisica",
+                "notaMat": 8,
+                "faltasMat": 3
+            }, 
+            
+            {
+                "idMat": 4,
+                "nomeMat": "Portugues",
+                "notaMat": 10,
+                "faltasMat": 1
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Leandra",
+        "categoria":"Aluno",
+        "dtNasc": "15 Junho 2000",
+        "endereco": "R. Prof. Pedro Viriato Parigot de Souza, S/N",
+        "telefone": "41 9999-9999",
+        "cidade": "Araucaria",
+        "idade": "22 anos",
+        "anoLetivo": "3 Ano",
+        "email": "wakeuplitlepedro@gmail.com",
+        "atvExtra": ["Volei", "Futsal"],
+        "materias": [
+            {
+                "idMat": 1,
+                "nomeMat": "Matematica",
+                "notaMat": 6,
+                "faltasMat": 6
+            },
+            {
+                "idMat": 2,
+                "nomeMat": "Quimica",
+                "notaMat": 7,
+                "faltasMat": 5
+            },
+
+            {
+                "idMat": 3,
+                "nomeMat": "Fisica",
+                "notaMat": 8,
+                "faltasMat": 3
+            }, 
+            
+            {
+                "idMat": 4,
+                "nomeMat": "Portugues",
+                "notaMat": 10,
+                "faltasMat": 1
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Thais possamai",
+        "categoria":"Aluno",
+        "dtNasc": "15 Junho 2000",
+        "endereco": "R. Prof. Pedro Viriato Parigot de Souza, S/N",
+        "telefone": "41 9999-9999",
+        "cidade": "Araucaria",
+        "anoLetivo": "3 Ano",
+        "email": "wakeuplitlepedro@gmail.com",
+        "atvExtra": ["Volei"],
+        "materias": [
+            {
+                "idMat": 1,
+                "nomeMat": "Matematica",
+                "notaMat": 6,
+                "faltasMat": 6
+            },
+            {
+                "idMat": 2,
+                "nomeMat": "Quimica",
+                "notaMat": 7,
+                "faltasMat": 5
+            },
+
+            {
+                "idMat": 3,
+                "nomeMat": "Fisica",
+                "notaMat": 8,
+                "faltasMat": 3
+            }, 
+            
+            {
+                "idMat": 4,
+                "nomeMat": "Portugues",
+                "notaMat": 10,
+                "faltasMat": 1
+            }
+        ]
+    }
+]

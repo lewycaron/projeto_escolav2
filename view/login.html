@@ -54,12 +54,14 @@
     </div>
     <nav id="navbar" class="nav-menu navbar">
       <ul class="px-5 py-5 menu list-unstyled text-gray text-1">
+        
         <li class="py-3">
           <a href="../index.html" class="text-muted text-decoration-none">
-            <i class="pe-2 bx bx-user"></i>
-            <span>Home</span>
+            <i class="pe-2 bx bx-user text-white text-2"></i>
+            <span class="border-bottom pb-1 text-white text-2">Home</span>
           </a>
         </li>
+        <!--
         <li class="py-3">
           <a href="aluno.html" class="text-muted text-decoration-none">
             <i class="pe-2 bx bx-user  text-white text-2"></i>
@@ -84,6 +86,7 @@
             <span class="border-bottom pb-1 text-white text-2">responsavel</span>
           </a>
         </li>
+        -->
       </ul>
     </nav><!-- .nav-menu -->
 
@@ -107,33 +110,29 @@
       <div class=" content col-lg-5 col-sm-6 top-10 alert alert-dark container h-50 shadow-lg-2 text-light bg-black border-0">
         <form class="form">
           <div class="form-group my-2 fw-bold">
-            <label for="email">Email</label>
-            <input type="email" class="form-control my-1" id="email" placeholder="Email">
+            <label for="email">Usuario</label>
+            <select type="text" class="form-control my-1" id="username" placeholder="username">
+            <option value="Aluno">Aluno</option>
+            <option value="Professor">Professor</option>
+            <option value="Secretaria">Secretaria</option>
+            <option value="Responsavel">Responsavel</option>
+            </select>
+            
           </div>
           <div class="form-group my-2 fw-bold">
             <label for="senha">Senha</label>
-            <input type="password" class="form-control my-1" id="senha" placeholder="Senha">
+            <input type="password" class="form-control my-1" id="password" placeholder="password">
           </div>
-
+          senha é 123
           <div class="text-center pt-3">
             <a href="#matricule-se" class="text-center"></a>
             Não possui login? Matricule-se aqui!
           </div>
 
-          <div class="text-center justify-content-center mt-4">
-            <input type="radio" id="aluno" name="login" > Aluno </input>
-            <input type="radio" id="professor" name="login"  > Professor </input>
-            <input type="radio" id="responsavel" name="login" > Responsavel </input>
-            <input type="radio" id="secretaria" name="login" > Secretaria </input>
-          </div>
-
-          <button type="submit" class="container btn btn-warning my-4" onclick="myFunction()">Entrar</button>
+          <button type="button" id="submit" value="login" class="container btn btn-warning my-4" onclick="validate()">Entrar</button>
 
         </form>
       </div>
-    
-
-
 
 
 
