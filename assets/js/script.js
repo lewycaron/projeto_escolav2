@@ -1,5 +1,6 @@
 function manipular(json){
 
+    
 var idUser = 1
 
 var nome = (json[idUser].name);

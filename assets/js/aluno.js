@@ -1,7 +1,7 @@
 function manipular(json){
 
-var idAluno = 1
 
+var idAluno = 1
 
 var nome = (json[idAluno].name);
 var dtNasc = (json[idAluno].dtNasc);
