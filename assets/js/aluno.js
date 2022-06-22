@@ -1,11 +1,4 @@
-
-fetch("../../json/aluno.json")
-.then(response => {
-  return response.json();
-})
-
-.then(json => {
-    
+function manipular(json){
 
 var idAluno = 1
 
@@ -58,9 +51,22 @@ let td_nomeAluno_extra = tr_extra.insertCell();
 let td_atvExtra_extra = tr_extra.insertCell();
 td_nomeAluno_extra.innerText = json[idAluno].name
 td_atvExtra_extra.innerText = json[idAluno].atvExtra
+}
 
-}   
-)
+
+fetch('../assets/json/aluno.json')
+.then(response => {
+    return response.json();
+    })
+.then(json => {
+    console.log(json)
+    manipular(json);
+    })
+.catch(error => {
+    console.log(error)
+});
+
+
 
 // VALIDAR FORMULARIO
 

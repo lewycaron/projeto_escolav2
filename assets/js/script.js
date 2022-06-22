@@ -1,13 +1,6 @@
-// DADOS JSON
-fetch("../../json/aluno.json")
-.then(response => {
-  return response.json();
-})
+function manipular(json){
 
-.then(json => {
- const dadosJson = json
-
- var idUser = 1
+var idUser = 1
 
 var nome = (dadosJson[idUser].name);
 var dtNasc = json[idUser].dtNasc;
@@ -93,27 +86,38 @@ var anoLetivo = (json[idUser].anoLetivo);
         td_faltasDisciplina_port.innerText = json[i].materias[3].faltasMat;
     }    
     
-
+}
 
 
 // TABELA DE ATIVIDADES EXTRA 
 
-    let tbody = document.getElementById('tbody_atvExtra');
+let tbody = document.getElementById('tbody_atvExtra');
+
+for (let i = 0; i < json.length; i++) {
+
+    let nome_atv = json.atvExtra
+    let tr = tbody.insertRow();
+    let td_nomeAluno = tr.insertCell();
+    let td_atvExtra = tr.insertCell();
     
-    for (let i = 0; i < json.length; i++) {
-
-        let nome_atv = json.atvExtra
-        let tr = tbody.insertRow();
-        let td_nomeAluno = tr.insertCell();
-        let td_atvExtra = tr.insertCell();
-        
-        td_nomeAluno.innerText = json[i].name; 
-        td_atvExtra.innerText = json[i].atvExtra
-    }
+    td_nomeAluno.innerText = json[i].name; 
+    td_atvExtra.innerText = json[i].atvExtra
+}
     
 
+fetch('../assets/json/aluno.json')
+.then(response => {
+    return response.json();
+    })
+.then(json => {
+    console.log(json)
+    manipular(json);
+    })
+.catch(error => {
+    console.log(error)
+});
 
-})
+
 
 
 //VALIDADOR DE FORMULÁRIO
