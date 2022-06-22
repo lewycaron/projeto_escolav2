@@ -45,8 +45,7 @@
                 <img src="../assets/img/trainers/trainer-2.jpg" alt="" id="prof_img" class="img-fluid rounded-circle">
                 <div id="pf_nome">
                     <div>
-                        <h1 class="text-light text-center"><a href="responsavel.html"><span
-                                    class="nm_secretaria">Responsável</span></a></h1>
+                        <h1 class="text-light text-center"><a href="responsavel.html"><span class="nm_secretaria">Responsável</span></a></h1>
                     </div>
                 </div>
             </div>
@@ -61,14 +60,14 @@
                             Didático</span></a></li>
                 <li><a href="#notas" class="nav-link scrollto"><i class="bx bx-envelope"></i><span>Notas /
                             Faltas</span></a></li>
-                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i><span>Agenda</span></a>
+
                 </li>
                 <li><a href="#contact" class="nav-link scrollto"><i
                             class="bx bx-envelope"></i><span>Mensalidade</span></a></li>
                 <li><a href="#contact" class="nav-link scrollto"><i
                             class="bx bx-envelope"></i><span>Mensagens</span></a></li>
-                <li><a href="login.html" class="nav-link scrollto"><i
-                                class="bx bx-envelope"></i><span>Logout</span></a></li>
+                <li><a href="login.html" class="nav-link scrollto"><i class="bx bx-envelope"></i><span>Logout</span></a>
+                </li>
             </ul>
         </nav><!-- .nav-menu -->
 
@@ -179,8 +178,8 @@
                             <div class="form-group col-md-6 mt-3">
                                 <div class="form-group border border p-2 btn-warning">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="invalidCheck" required>
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            required>
                                         <label class="form-check-label" for="invalidCheck"> Aceito os Termos
                                             e condições de cadastro.</label>
                                         <div class="invalid-feedback">
@@ -243,6 +242,36 @@
         </div><!-- End About Section -->
 
 
+        <!-- ======= AGENDA Section ======= -->
+        <section id="agenda" class="">
+            <div class="container">
+                <div class="section-title">
+                    <h2 id="agenda_titulo" class="agendaTitulo">Agenda</h2>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Acessar Agenda
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-fullscreen" myModal.handleUpdate()>
+                        <div class="modal-content">
+                            <div class="modal-body m-0 p-0">
+                                <iframe src="agenda.html" allowfullscreen="true" width="100%" height="99%"></iframe>
+                            </div>
+                            <div class="modal-footer bg-dark">
+                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Fechar
+                                    agenda</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End About Section -->
+
+
         <!-- ======= Formulário Atividade Extra Section ======= -->
         <section id="cadastro_atv" class="">
             <div class="container">
@@ -262,14 +291,14 @@
                                 <div class="valid-feedback">Dados Ok!</div>
                                 <div class="invalid-feedback"> Informe Dados!</div>
                             </div>
-                           
+
                             <div class="form-group col-md-6 my-3">
                                 <div>
                                     <label class="form-check-label" for="inlineCheckbox1">
                                         <h6>Atividades Extras</h6>
                                     </label>
                                 </div>
-                                <div class="form-check form-check-inline" >
+                                <div class="form-check form-check-inline">
                                     <input class="col-form-label-sm form-check-input" type="checkbox"
                                         id="inlineCheckbox1" value="option1">
                                     <label class="form-check-label" for="inlineCheckbox1">Xadrez</label>
@@ -295,8 +324,8 @@
                             <div class="form-group col-md-6 my-3">
                                 <div class="form-group border border p-2 btn-warning">
                                     <div class="form-check ">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="invalidCheck_atv" required>
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck_atv"
+                                            required>
                                         <label class="form-check-label" for="invalidCheck_atv"> Aceito os Termos
                                             e condições de cadastro.</label>
                                         <div class="invalid-feedback">
@@ -340,13 +369,13 @@
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="contmat-tab" data-bs-toggle="tab"
-                        data-bs-target="#contmat-tab-pane" type="button" role="tab"
-                        aria-controls="contmat-tab-pane" aria-selected="true">Matemática</button>
+                        data-bs-target="#contmat-tab-pane" type="button" role="tab" aria-controls="contmat-tab-pane"
+                        aria-selected="true">Matemática</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contquim-tab" data-bs-toggle="tab"
-                        data-bs-target="#contquim-tab-pane" type="button" role="tab"
-                        aria-controls="contquim-tab-pane" aria-selected="false">Quimica</button>
+                    <button class="nav-link" id="contquim-tab" data-bs-toggle="tab" data-bs-target="#contquim-tab-pane"
+                        type="button" role="tab" aria-controls="contquim-tab-pane"
+                        aria-selected="false">Quimica</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="contfisica-tab" data-bs-toggle="tab"
@@ -410,8 +439,8 @@
                 </div><!-- End conteudo matematica Section -->
 
                 <!-- ======= conteudo quimica - Section ======= -->
-                <div class="tab-pane fade" id="contquim-tab-pane" role="tabpanel"
-                    aria-labelledby="contquim-tab" tabindex="0">
+                <div class="tab-pane fade" id="contquim-tab-pane" role="tabpanel" aria-labelledby="contquim-tab"
+                    tabindex="0">
 
                     <section>
                         <div class="container services">
@@ -435,8 +464,8 @@
                 </div><!-- End conteudo quimica Section -->
 
                 <!-- ======= Conteudo fisica - Section ======= -->
-                <div class="tab-pane fade" id="contfisica-tab-pane" role="tabpanel"
-                    aria-labelledby="contfisica-tab" tabindex="0">
+                <div class="tab-pane fade" id="contfisica-tab-pane" role="tabpanel" aria-labelledby="contfisica-tab"
+                    tabindex="0">
 
                     <section>
                         <div class="container services">
@@ -446,8 +475,8 @@
                                     <div class="row">
                                         <div class="col icon-box m-3" data-aos="fade-up">
                                             <div class="icon"><i class="bi bi-lightbulb-fill"></i></div>
-                                            <h4 class="title"><a href="../assets/img/hero-bg.jpg"
-                                                    target="_blank">Fisica - 01</a></h4>
+                                            <h4 class="title"><a href="../assets/img/hero-bg.jpg" target="_blank">Fisica
+                                                    - 01</a></h4>
                                             <p class="description">Material disponivel para download.</p>
                                         </div>
                                     </div>
@@ -575,7 +604,8 @@
         </div>
     </footer><!-- End  Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="../assets/vendor/purecounter/purecounter.js"></script>
@@ -594,4 +624,5 @@
     <script src="../assets/js/aluno.js"></script>
 
 </body>
+
 </html>

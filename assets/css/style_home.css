@@ -1,9 +1,4 @@
-/**
-* Template Name: Mentor - v4.7.0
-* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -11,17 +6,19 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  background-color: #111;
 }
 
 a {
-  color: #5fcf80;
+  color: #ffffff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #86db9f;
+  color: #ccc;
   text-decoration: none;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
@@ -37,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5fcf80;
+  background: #ffc107;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -49,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #7ed899;
+  background: #0d6efd;
   color: #fff;
 }
 .back-to-top.active {
@@ -132,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 #header .logo a {
-  color: #5fcf80;
+  color: #ffffff;
 }
 #header .logo img {
   max-height: 40px;
@@ -143,8 +140,8 @@ h1, h2, h3, h4, h5, h6 {
 */
 .get-started-btn {
   margin-left: 22px;
-  background: #5fcf80;
-  color: #fff;
+  background: #cfcf5f;
+  color: rgb(0, 0, 0);
   border-radius: 50px;
   padding: 8px 25px;
   white-space: nowrap;
@@ -153,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 .get-started-btn:hover {
-  background: #3ac162;
+  background: #0d6efd;
   color: #fff;
 }
 @media (max-width: 768px) {
@@ -200,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #5fcf80;
+  color: #fff;
 }
 .navbar .dropdown ul {
   display: block;
@@ -300,23 +297,27 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile ul {
   display: block;
   position: absolute;
+  height: fit-content;
+  width: fit-content;
+  align-items: center;
   top: 55px;
   right: 15px;
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
   border-radius: 6px;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   overflow-y: auto;
   transition: 0.3s;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #37423b;
+  color: #ffffff;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #5fcf80;
+  background-color: #111;
+  color: #fff;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -398,12 +399,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   transition: 0.5s;
   margin-top: 30px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #ffc107;
+  color: #ffc107;
 }
 #hero .btn-get-started:hover {
-  background: #5fcf80;
-  border: 2px solid #5fcf80;
+  background: #0d6efd;
+  border: 2px solid #0d6efd;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -433,7 +434,8 @@ section {
 }
 
 .section-bg {
-  background-color: #f6f7f6;
+  background-color: #000000;
+  color: fff;
 }
 
 .section-title {
@@ -447,7 +449,7 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: #ffc107;
   font-family: "Poppins", sans-serif;
 }
 .section-title h2::after {
@@ -455,7 +457,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #9ae1af;
+  background: #ffc107;
   margin: 4px 10px;
 }
 .section-title p {
@@ -465,7 +467,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #37423b;
+  color: #ffffff;
 }
 
 .breadcrumbs {
@@ -475,6 +477,7 @@ section {
   padding: 30px 0;
   color: #fff;
 }
+
 @media (max-width: 992px) {
   .breadcrumbs {
     margin-top: 63px;

@@ -1,100 +1,160 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../assets/img/boxes.svg" rel="icon">
-    <link href="../assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <title>Login</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Login</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/boxes.svg" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+
+
 </head>
 
-<body class="row h-100 w-100 bg-dark">
+<body class="bg-dark">
 
-    <div class="sidebar col-3 bg-black text-gray shadow-lg-2 h-90">
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-        <div class="mx-5 my-5 logo row text-white">
-            <i class="bi bi-boxes col-4 text-end my-auto display-3"></i>
-            <h2 class="col-8 ps-4">
-                <div class="pb-1 opacity-75">Escola</div>
-                <div>Tópicos</div>
-                <div>Especiais</div>
-            </h2>
-        </div>
+  <!-- ======= Header ======= -->
+  <header id="header">
 
-        <ul class="px-5 py-5 menu list-unstyled text-gray text-1">
-            <li class="py-3">
-                <a href="../index.html" class="text-muted text-decoration-none">
-                    <i class="pe-2 bx bx-user"></i>
-                    <span>Home</span>
-                </a>
-            </li>
-            <li class="py-3">
-                <a href="aluno.html" class="text-muted text-decoration-none">
-                    <i class="pe-2 bx bx-user  text-white text-2"></i>
-                    <span class="border-bottom pb-1 text-white text-2">Aluno</span>
-                </a>
-            </li>
-            <li class="py-3">
-                <a href="prof.html" class="text-muted text-decoration-none">
-                    <i class="pe-2 bx bx-user  text-white text-2"></i>
-                    <span class="border-bottom pb-1 text-white text-2">Professor</span>
-                </a>
-            </li>
-            <li class="py-3">
-                <a href="secretaria.html" class="text-muted text-decoration-none">
-                    <i class="pe-2 bx bx-user  text-white text-2"></i>
-                    <span class="border-bottom pb-1 text-white text-2">secretaria</span>
-                </a>
-            </li>
-            <li class="py-3">
-                <a href="responsavel.html" class="text-muted text-decoration-none">
-                    <i class="pe-2 bx bx-user  text-white text-2"></i>
-                    <span class="border-bottom pb-1 text-white text-2">responsavel</span>
-                </a>
-            </li>
-            
-        </ul>
+    <div class="d-flex flex-column">
+      <div class="profile row mt-5">
+        <i class="bi bi-boxes col-4 text-end my-auto display-3 text-white"></i>
+        <h2 class="col-8 ps-4 text-white">
+          <div class="pb-1 opacity-75">Escola</div>
+          <div>Tópicos</div>
+          <div>Especiais</div>
+        </h2>
+      </div>
+    </div>
+    <nav id="navbar" class="nav-menu navbar">
+      <ul class="px-5 py-5 menu list-unstyled text-gray text-1">
+        <li class="py-3">
+          <a href="../index.html" class="text-muted text-decoration-none">
+            <i class="pe-2 bx bx-user"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="py-3">
+          <a href="aluno.html" class="text-muted text-decoration-none">
+            <i class="pe-2 bx bx-user  text-white text-2"></i>
+            <span class="border-bottom pb-1 text-white text-2">Aluno</span>
+          </a>
+        </li>
+        <li class="py-3">
+          <a href="prof.html" class="text-muted text-decoration-none">
+            <i class="pe-2 bx bx-user  text-white text-2"></i>
+            <span class="border-bottom pb-1 text-white text-2">Professor</span>
+          </a>
+        </li>
+        <li class="py-3">
+          <a href="secretaria.html" class="text-muted text-decoration-none">
+            <i class="pe-2 bx bx-user  text-white text-2"></i>
+            <span class="border-bottom pb-1 text-white text-2">secretaria</span>
+          </a>
+        </li>
+        <li class="py-3">
+          <a href="responsavel.html" class="text-muted text-decoration-none">
+            <i class="pe-2 bx bx-user  text-white text-2"></i>
+            <span class="border-bottom pb-1 text-white text-2">responsavel</span>
+          </a>
+        </li>
+      </ul>
+    </nav><!-- .nav-menu -->
 
     </div>
+  </header><!-- End Header -->
 
-    <div class="content col-8 mx-auto text-light">
-        
-        <h1 class="fw-bold h2 p-5 border-bottom border-black border-3 text-right text-white opacity-50">
-            <i class="pe-2 bx bx-user display-6 fw-bold"></i>
-            <span class=""> Login do Aluno</span>
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="">
+      <div class="container">
+        <h1 class="fw-bold h2 p-2 border-bottom border-black border-2 text-right text-white opacity-50">
+
+          <i class="pe-2 bx bx-user display-7 fw-bold"></i>
+          <span class=""> Login</span>
         </h1>
+      </div>
+    </section><!-- End Breadcrumbs -->
 
-        <div class="form position-relative top-10 col-5 alert alert-dark container h-50 shadow-lg-2">
-            <form>
-                <div class="form-group my-2">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control my-1" id="email" placeholder="Email">
-                </div>
-                <div class="form-group my-2">
-                    <label for="senha">Senha</label>
-                    <input type="password" class="form-control my-1" id="senha" placeholder="Senha">
-                </div>
-                <a href="#matricule-se" class="text-center">
-                    <div class="text-center pt-3">
-                        Não possui login? Matricule-se aqui!
-                    </div>
-                </a>
-                <button type="submit" class="container btn btn-dark my-4">Entrar</button>
-                
-            </form>
-            
-        </div>
+    
+      <div class=" content col-lg-5 col-sm-6 top-10 alert alert-dark container h-50 shadow-lg-2 text-light bg-black border-0">
+        <form class="form">
+          <div class="form-group my-2 fw-bold">
+            <label for="email">Email</label>
+            <input type="email" class="form-control my-1" id="email" placeholder="Email">
+          </div>
+          <div class="form-group my-2 fw-bold">
+            <label for="senha">Senha</label>
+            <input type="password" class="form-control my-1" id="senha" placeholder="Senha">
+          </div>
 
-    </div>
+          <div class="text-center pt-3">
+            <a href="#matricule-se" class="text-center"></a>
+            Não possui login? Matricule-se aqui!
+          </div>
 
-    <footer class="bg-dark h-10 shadow-lg-2 opacity-75">
+          <div class="text-center justify-content-center mt-4">
+            <input type="radio" id="aluno" name="login" > Aluno </input>
+            <input type="radio" id="professor" name="login"  > Professor </input>
+            <input type="radio" id="responsavel" name="login" > Responsavel </input>
+            <input type="radio" id="secretaria" name="login" > Secretaria </input>
+          </div>
 
-    </footer>
+          <button type="submit" class="container btn btn-warning my-4" onclick="myFunction()">Entrar</button>
+
+        </form>
+      </div>
+    
+
+
+
+
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/typed.js/typed.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/login.js"></script>
 
 </body>
-
 </html>
