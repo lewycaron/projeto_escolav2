@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Área do Aluno</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/boxes.svg" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+
+  <main id="">
+
+
+
+
+ <!-- ======= CADASTRO Section ======= -->
+ <section id="cadastro" class="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2 id="novo_cadastro">Novo cadastro</h2>
+            <p></p>
+        </div>
+        <div class="row" data-aos="fade-in">
+
+            <form role="form" class="form">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" name="name" class="form-control" id="name_cadastro" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="name">Seu Email</label>
+                        <input type="email" class="form-control" name="email" id="email_cadastro" required>
+                    </div>
+                    <div class="form-group col-md">
+                        <label for="dtNasc">Data Nasc</label>
+                        <input type="date" class="form-control" name="dtNasc" id="dtNasc_cadastro" required>
+                    </div>
+                    <div class="form-group col-md">
+                        <label for="name">Telefone</label>
+                        <input type="phone" class="form-control" name="Telefone" id="telefone_cadastro" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Endereço</label>
+                        <input type="text" class="form-control" name="" id="endereco_cadastro" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="name">Cidade</label>
+                        <input type="text" class="form-control" name="" id="cidade_cadastro" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="name">Categoria</label>
+                        <input type="text" class="form-control" name="" id="categoria_cadastro" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md">
+                        <div>
+                            <label class="form-check-label" for="inlineCheckbox1">Atividades Extras</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="col-form-label-sm form-check-input" type="checkbox"
+                                id="checkbox_1" value="Xadrez">
+                            <label class="form-check-label" for="checkbox_1">Xadrez</label>
+                        </div>
+                        <div class="form-check form-check-inline ">
+                            <input class="form-check-input col-form-label-sm" type="checkbox"
+                                id="checkbox_2" value="Judo">
+                            <label class="form-check-label" for="checkbox_2">Judo</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input col-form-label-sm" type="checkbox"
+                                id="checkbox_3" value="Volei">
+                            <label class="form-check-label" for="checkbox_3">Volei</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input col-form-label-sm" type="checkbox"
+                                id="checkbox_4" value="Futsal">
+                            <label class="form-check-label" for="inlineCheckbox3">Futsal</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-5">
+                        <label for="name">Ano Letivo</label>
+                        <select id="anoLetivo_cadastro" class="form-control">
+                            <option value="1 ano">1 Ano</option>
+                            <option value="2 ano">2 Ano</option>
+                            <option value="3 ano">3 Ano</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="my-3"></div>
+                <div><button class="btn btn-primary" type="button" onclick="cadastrar()">Cadastrar</button></div>
+            </form>
+
+        </div>
+    </div>
+
+</section><!-- End CADASTRO Section -->
+
+
+
+
+ 
+
+  </main><!-- End #main -->
+
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/typed.js/typed.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/cadastro.js"></script>
+
+</body>
+</html>
