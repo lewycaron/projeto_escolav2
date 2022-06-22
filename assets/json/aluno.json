@@ -9,7 +9,7 @@
         "cidade": "Curitiba",
         "anoLetivo": "3 Ano",
         "email": "teste@gmail.com",
-        "atvExtra": ["Xadrez", "Volei", "Futsal"],
+        "atvExtra": ["Xadrez", "Judo","Volei", "Futsal"],
         "materias": [
             {
                 "idMat": 1,

@@ -2,7 +2,7 @@ function manipular(json){
 
 var idUser = 1
 
-var nome = (dadosJson[idUser].name);
+var nome = (json[idUser].name);
 var dtNasc = json[idUser].dtNasc;
 var endereco = (json[idUser].endereco);
 var telefone = (json[idUser].telefone);
@@ -17,6 +17,7 @@ var anoLetivo = (json[idUser].anoLetivo);
 
 
     let tbody_mat = document.getElementById('tbody_mat');
+    
     for (let i = 0; i < json.length; i++) {
     
         let tr_mat = tbody_mat.insertRow();
@@ -26,6 +27,7 @@ var anoLetivo = (json[idUser].anoLetivo);
         let td_faltasDisciplina_mat = tr_mat.insertCell();
                 
         td_nomeAluno_mat.innerText = json[i].name; 
+
         td_nomeDisciplina_mat.innerText = json[i].materias[0].nomeMat; 
         td_notaDisciplina_mat.innerText = json[i].materias[0].notaMat;
         td_faltasDisciplina_mat.innerText = json[i].materias[0].faltasMat;
@@ -86,24 +88,24 @@ var anoLetivo = (json[idUser].anoLetivo);
         td_faltasDisciplina_port.innerText = json[i].materias[3].faltasMat;
     }    
     
-}
-
-
-// TABELA DE ATIVIDADES EXTRA 
-
-let tbody = document.getElementById('tbody_atvExtra');
-
-for (let i = 0; i < json.length; i++) {
-
-    let nome_atv = json.atvExtra
-    let tr = tbody.insertRow();
-    let td_nomeAluno = tr.insertCell();
-    let td_atvExtra = tr.insertCell();
     
-    td_nomeAluno.innerText = json[i].name; 
-    td_atvExtra.innerText = json[i].atvExtra
-}
     
+    // TABELA DE ATIVIDADES EXTRA 
+    
+    let tbody_atvE = document.getElementById('tbody_atvExtra');
+    
+    for (let i = 0; i < json.length; i++) {
+    
+    let tr_atvE = tbody_atvE.insertRow();
+    let td_nomeAluno_atvE = tr_atvE.insertCell();
+    let td_atvExtra_atvE = tr_atvE.insertCell();
+    
+    td_nomeAluno_atvE.innerText = json[i].name; 
+    td_atvExtra_atvE.innerText = json[i].atvExtra
+
+    }
+
+}
 
 fetch('../assets/json/aluno.json')
 .then(response => {
