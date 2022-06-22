@@ -1,8 +1,4 @@
-fetch("../../json/aluno.json")
-.then(response => {
-  return response.json();
-})
-.then(json => {
+function manipular(json){
 
 
 var idUser = 2
@@ -34,6 +30,15 @@ document.getElementById('prof_city').innerHTML = cidade;
 document.getElementById('prof_anoLetivo').innerHTML = anoLetivo;
 document.getElementById('prof_email').innerHTML = email;
 
-
-
-})
+}
+fetch('../assets/json/aluno.json')
+.then(response => {
+    return response.json();
+    })
+.then(json => {
+    console.log(json)
+    manipular(json);
+    })
+.catch(error => {
+    console.log(error)
+});
